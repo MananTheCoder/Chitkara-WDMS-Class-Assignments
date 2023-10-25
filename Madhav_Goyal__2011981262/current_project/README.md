@@ -1,5 +1,3 @@
-
-
 # TextUtils - Text Manipulation Utility Web App
 
 ## Responsive web-app to quickly manipulate text content and get useful summary about it.
@@ -21,6 +19,8 @@
 ### Technologies used:
 
 - React - JavaScript Front-End Library
+- Create React App - React Framework to create React project quickly and easily
+- React Router DOM - routing library for React applications to navigate between different pages
 - Bootstrap - Front-End Framework with reusable HTML, CSS and JavaScript code
 
 ---
@@ -32,6 +32,7 @@
 - Textarea - in middle of page to enter text
 - Buttons - right under the Textarea to manipulate text
 - Alert - shown at top for 3 seconds after clicking any button
+- Accordian - on About page to view info about website
 
 ---
 
