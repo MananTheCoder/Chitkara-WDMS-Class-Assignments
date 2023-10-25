@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('coffee-bg.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #6F4E37;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+        }
+
+        .header {
+            background-color: #35190e;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #8B4513;
+            border: none;
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background-color: #6F4E37;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Coffee House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to the Coffee House</h1>
+            <p>Where Coffee Meets Comfort</p>
+        </div>
+    </header>
+
+    <div class="container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="espresso.html">
+                        <img src="https://example.com/coffee1.jpg" class="card-img-top" alt="Espresso">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso</h5>
+                        <p class="card-text">Strong and aromatic</p>
+                        <a href="espresso.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="cappuccino.html">
+                        <img src="https://example.com/coffee2.jpg" class="card-img-top" alt="Cappuccino">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Creamy and delicious</p>
+                        <a href="cappuccino.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="latte.html">
+                        <img src="https://example.com/coffee3.jpg" class="card-img-top" alt="Latte">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="card-text">Mild and comforting</p>
+                        <a href="latte.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Coffee House, where we're passionate about serving you the best coffee in town. Our coffee is carefully sourced and roasted to perfection. We provide a cozy and welcoming atmosphere for coffee enthusiasts to relax and enjoy a cup of their favorite brew.</p>
+    </div>
+
+    <div class="container mt-4" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please don't hesitate to reach out to us. You can contact us at:</p>
+        <address>
+            <strong>Coffee House</strong><br>
+            random street<br>
+            random place, 12345<br>
+            <abbr title="Phone">Phone:</abbr> +91 1234567890
+        </address>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Coffee House</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
