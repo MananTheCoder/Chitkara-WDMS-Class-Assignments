@@ -2,6 +2,30 @@
 
 ## Responsive web-app to quickly manipulate text content and get useful summary about it.
 
+### Screenshots:
+
+Dark theme:
+
+![1698248219182](image/README/1698248219182.png)
+
+Light Theme:
+
+![1698248362409](image/README/1698248362409.png)
+
+Text Manipulation and Alerts:
+
+![1698248378828](image/README/1698248378828.png)
+
+Text Summary and Copy to Clipboard:
+
+![1698248384228](image/README/1698248384228.png)
+
+About Page:
+
+![1698248393519](image/README/1698248393519.png)
+
+---
+
 ### The feature list is as follows:
 
 - Convert to Upper Case
