@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="color:black">
+                    <h5>Assignment</h5>
+                    <p>The purpose of this page is using 3 bootstrap components for WDMS assignment.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="data:image/png;base64,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"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="color:black">
+                    <h5>The components I'm using are:</h5>
+                    <p>Carousel</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="color:black">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88I-KG3rCM9tpDqNzG6LrU1U7pCN3tqIwUw&usqp=CAU" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The components I'm using are:</h5>
+                    <p>NavBar and cards</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- <h4>The purpose of this page is using 3 bootstrap components for WDMS assignment.</h4><br>
+    <h6>The components I'm using are:<br>
+        <ul>
+            <li>NavBar</li>
+            <li>Cards</li>
+            <li> </li>
+        </ul>
+
+    </h6> -->
+    <br>
+    <div style="display:flex; padding:10px">
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwq7yn73yxjnLLPtI_-0rlyVPXVc4nUfkTQ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">This is a card I've just made. Remind me to add this in my projet</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">link</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th?id=OIP.YldCV11s9ONgsXksVGO2jAHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">This is a card I've just made. Remind me to add this in my projet</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">link</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th?id=OIP.RZit-f8kmjDv27MWUOguJwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">This is a card I've just made. Remind me to add this in my projet</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">link</a>
+            </div>
+        </div>
+    </div>
+    <script src="/new.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous">
+    </script>
+    <script>
+        console.log($)
+        let a = "h1";
+        $(document).ready(function() {
+            $(a).click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
