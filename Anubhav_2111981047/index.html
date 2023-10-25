@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .jumbotron {
+        background: url("https://img.freepik.com/premium-photo/pills-medical-equiupments-green-banner-background_8087-321.jpg") no-repeat center center;
+        background-size: cover;
+        color: white; /* Set text color to white for better visibility */
+        padding: 100px; /* Add padding for better text readability */
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Medical Clinic</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#doctors">Doctors</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center" id="home">
+    <h1>Welcome to Our Medical Clinic</h1>
+    <p>Your Health is Our Priority</p>
+    <a class="btn btn-primary btn-lg" href="#services" role="button">Learn More</a>
+</div>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/close-up-businessman-hand-pointing-tablet-with-creative-polygonal-medical-interface-hologram-blurry-hospital-office-interior-background-online-healthcare-cardiology-technology-concept_670147-5814.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697932800&semt=ais" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Primary Care</h5>
+                        <p class="card-text">Comprehensive primary care services to keep you healthy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1319031310/photo/doctor-writing-a-medical-prescription.jpg?s=612x612&w=0&k=20&c=DWZGM8lBb5Bun7cbxhKT1ruVxRC_itvFzA9jxgoA0N8=" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Specialized Care</h5>
+                        <p class="card-text">Specialized medical services for specific health conditions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/close-up-businessman-hand-pointing-tablet-with-creative-polygonal-medical-interface-hologram-blurry-hospital-office-interior-background-online-healthcare-cardiology-technology-concept_670147-5814.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697932800&semt=ais" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Emergency Care</h5>
+                        <p class="card-text">24/7 emergency medical care for critical cases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center">Our Pricing</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Basic Package
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$49.99/month</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Primary Care</li>
+                            <li class="list-group-item">Emergency Care</li>
+                            <li class="list-group-item">Limited Specialized Care</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Premium Package
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$99.99/month</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Primary Care</li>
+                            <li class="list-group-item">Emergency Care</li>
+                            <li class="list-group-item">Full Specialized Care</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Family Package
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$149.99/month</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Primary Care</li>
+                            <li class="list-group-item">Emergency Care</li>
+                            <li class="list-group-item">Unlimited Specialized Care</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Doctors Section with Tabs -->
+<section id="doctors">
+    <div class="container mt-5">
+        <h2 class="text-center">Our Doctors</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#doctor1">Dr. John Doe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#doctor2">Dr. Jane Smith</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#doctor3">Dr. David Brown</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="doctor1">
+                <p>Dr. John Doe is a specialist in primary care with many years of experience.</p>
+            </div>
+            <div class="tab-pane fade" id="doctor2">
+                <p>Dr. Jane Smith is a specialist in emergency care and has saved countless lives.</p>
+            </div>
+            <div class="tab-pane fade" id="doctor3">
+                <p>Dr. David Brown is a renowned specialist in various fields of medicine.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Progress Bar Section -->
+<section id="progress">
+    <div class="container mt-5">
+        <h2 class="text-center">Your Health Progress</h2>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+    <p>&copy; 2023 Medical Clinic</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
