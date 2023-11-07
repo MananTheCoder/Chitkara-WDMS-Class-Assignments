@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(243, 144, 221);
+        }
+        input{
+            background-color: rgb(215, 151, 224);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Popover</h1>
+    <form>
+        <h2>
+            Registration Form
+        </h2>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        title="Important"
+        data-toggle="popover"
+        data-trigger="focus"
+        data-content="Please write your name like 'KAWALJEET KAUR'!!"
+      />
+<br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age">
+<br><br>
+      <label for="college">College Name:</label>
+      <input type="text" id="college" title="Important" data-toggle="popover"
+      data-trigger="focus"
+      data-content="Example: CHITKARA UNIVERSITY, HIMACHAL PRADESH">
+    </form>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>
