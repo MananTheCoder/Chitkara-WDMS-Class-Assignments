@@ -88,7 +88,7 @@
       document.querySelector(".wordCount").innerText = wordCount;
       document.querySelector(".charCount").innerText = charCount;
       document.querySelector(".minutes").innerText = minutes;
-      document.querySelector(".preview").innerText = text;
+      document.querySelector(".preview").innerText = text ? text : "Nothing to preview";
     }
 
     const toggleColorTheme = () => {
