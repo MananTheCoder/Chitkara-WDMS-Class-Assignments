@@ -31,9 +31,27 @@ This repository contains a basic HTML webpage for an "Itinerary Planner" using B
 
 To view the webpage, simply open the HTML file in a web browser. You can also customize the content, styles, and links to suit your needs.
 
----
+#### Changes Made 
+Express-Based Itinerary Planner README
+This repository has been transformed to showcase an "Itinerary Planner" web application using Express.js and Bootstrap. Below is an overview of the modified structure and content:
 
-Feel free to modify and enhance the HTML file as needed for your project. If you have any questions or need further assistance, please don't hesitate to reach out.
+Project Structure
+server.js: Express server setup.
+client: Folder containing static files HTML.
 
-Happy coding!
+Changes Made
+Express Integration: Replaced the basic HTML server with an Express.js server for a more dynamic and scalable application.
+
+Directory Structure: Organized files into a more structured directory, separating the server file (server.js) and static assets (client folder).
+
+Relative Paths Update: Updated relative paths in the HTML file to ensure proper rendering with the Express server.
+
+Usage
+Customize the content, styles, and links in the HTML file to suit your needs.
+
+Explore further enhancements or add additional features using the Express.js framework.
+
+Dependencies
+Express.js: A fast, unopinionated, minimalist web framework for Node.js.
+Bootstrap: A popular front-end framework for building responsive, mobile-first projects.
 
