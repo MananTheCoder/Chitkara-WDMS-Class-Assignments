@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .toast {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .jumbotron {
+      background: url("https://t4.ftcdn.net/jpg/03/26/12/23/360_F_326122335_RKvTXMb4RYkIzk94ZoPjkZQe2CUOVnen.jpg");
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #795548;
+      border-color: #6b4824;
+    }
+
+    .btn-primary:hover {
+      background-color: #6b4824;
+      border-color: #583a1d;
+    }
+
+    .toast-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coffee House</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            </div>
+        </div>
+        </div>
+    </nav>  
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid p-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to the Coffee House</h1>
+      <p class="lead">Discover the finest coffee in town!</p>
+      <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+    </div>
+  </div>
+
+  <!-- Coffee Menu Section -->
+  <section id="menu" class="container mt-5">
+    <h2 class="text-center mb-4">Our Coffee Menu</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i0.wp.com/naivo.in/storage/2021/08/product-image-2.png?w=1170&ssl=1" class="card-img-top" alt="Coffee 1">
+          <div class="card-body">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text">A shot of pure delight.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#espressoModal">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg" class="card-img-top" alt="Coffee 2">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">Creamy and frothy perfection.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cappuccinoModal">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.foodandwine.com/thmb/CCe2JUHfjCQ44L0YTbCu97ukUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg" class="card-img-top" alt="Coffee 3">
+          <div class="card-body">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">Smooth and comforting.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#latteModal">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/orders-icon.png" class="rounded me-2 " alt="..." width="20px">
+      <strong class="me-auto">Order</strong>
+      <small>1 sec ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body text-dark ">
+      Your order has been placed!
+    </div>
+  </div>
+
+  <div class="container my-2">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Coffee House, Inc</p>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Toasts -->
+  <script>
+    $('.btn-primary').click(function() {
+      $('.toast').toast('show');
+    });
+  </script>
+</body>
+</html>
