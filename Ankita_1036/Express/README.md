@@ -13,10 +13,10 @@ A Bootstrap dropdown component with a list of Computer Science subjects.
 Component-3: Card
 A Bootstrap card component with a title, text, and buttons.
 
-Express.js Setup
+Express.js Setup - 
 The project uses Express.js to serve the HTML file.
 
-Running the Application
+Running the Application - 
 Start the Express.js server:
 node index.js
 The application will be accessible at http://localhost:3000.
