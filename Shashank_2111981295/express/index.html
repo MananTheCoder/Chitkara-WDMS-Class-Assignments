@@ -3,16 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Rendering 1st html file</h1>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap assignment</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
@@ -61,38 +51,42 @@
       </nav>
     
     <!-- CARD -->
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-auto" style="width: 18rem;">
         <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">BLOG </h5>
+          <p class="card-text">See my latest blog of my first trip to pluto </p>
+          <img src="https://th-thumbnailer.cdn-si-edu.com/2pqnNiTDB4QXA4LGt9dzZj6wyS4=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/9a/91/9a915e4d-0f04-4070-a23a-14acbf3351ed/jun2015_g01_pluto.jpg" class="d-block w-100"  style="max-width: 300px; max-height: 200px;">
+          <a href="#" class="btn btn-primary">Open Blog</a>
         </div>
       </div>
 
 
       <!-- CAROUSEL -->
-      <div id="carouselExample" class="carousel slide">
+      <div id="carouselExampleInterval" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 600px;">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="1.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="2.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="3.jpeg" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-item active" data-bs-interval="2000"> 
+                <img src="https://images.pexels.com/photos/2627945/pexels-photo-2627945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="First1" style="max-width: 600px; max-height: 500px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000"> 
+                <img src="https://images.unsplash.com/photo-1536532184021-da5392b55da1?auto=format&fit=crop&q=80&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMHNreXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="Second2" style="max-width: 600px; max-height: 500px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000"> 
+                <img src="https://images.pexels.com/photos/3584430/pexels-photo-3584430.jpeg?cs=srgb&dl=pexels-disha-sheta-3584430.jpg&fm=jpg" class="d-block w-100" alt="Third3" style="max-width: 600px; max-height: 500px;">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        
+        <div class="carousel-controls-wrapper">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
+    </div>
 
       <!-- FORM -->
       <form>
