@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    #todoForm {
+      margin-bottom: 20px;
+    }
+
+    #taskInput {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .btn-primary {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .list-group-item {
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .delete-btn, .update-btn {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .edit-mode input {
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="mb-4">To-Do List</h2>
+    <form id="todoForm">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Add a new task" id="taskInput" required>
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Add Task</button>
+        </div>
+      </div>
+    </form>
+    <ul class="list-group" id="taskList">
+      <!-- Tasks will be added here dynamically -->
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('todoForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const taskInput = document.getElementById('taskInput');
+      const taskList = document.getElementById('taskList');
+
+      if (taskInput.value.trim() !== '') {
+        const taskItem = document.createElement('li');
+        taskItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+        taskItem.innerHTML = `
+          <span>${taskInput.value}</span>
+          <div>
+            <button class="update-btn btn btn-warning btn-sm mr-2">Update</button>
+            <button class="delete-btn btn btn-danger btn-sm">&times;</button>
+          </div>
+        `;
+        taskList.appendChild(taskItem);
+        taskInput.value = '';
+
+        // Attach event listener to the delete button
+        const deleteButton = taskItem.querySelector('.delete-btn');
+        deleteButton.addEventListener('click', function () {
+          taskItem.remove();
+        });
+
+        // Attach event listener to the update button
+        const updateButton = taskItem.querySelector('.update-btn');
+        const span = taskItem.querySelector('span');
+        updateButton.addEventListener('click', function () {
+          const currentText = span.textContent;
+          const newText = prompt('Edit task:', currentText);
+          if (newText !== null) {
+            span.textContent = newText;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
