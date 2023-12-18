@@ -1,14 +1,43 @@
-# Chitkara-WDMS-Class-Assignments
-Tracking the class's assignments
-# Coffee House Website
+# Express.js and Bootstrap Project
 
-Welcome to the Coffee House website. This website serves as an online platform for your coffee shop. Customize it with your content, images, and branding to showcase your coffee menu, provide information about your offerings, and engage with your customers.
+This repository contains a simple Express.js project integrated with Bootstrap to create a static website for a fictional coffee house. The project includes routing for the homepage and contact page.
 
-## Usage
+## Project Structure
 
-1. Clone this repository.
-2. Customize the website by replacing images and text in the HTML and CSS.
-3. Open `index.html` in your web browser to view your Coffee House website.
+```plaintext
+project-root
+|-- public
+|   |-- css
+|   |   |-- styles.css
+|-- views
+|   |-- home.ejs
+|   |-- contact.ejs
+|-- app.js
+|-- package.json
+Features
+Homepage (/): Displays information about the coffee house and its menu.
 
-Enjoy using this website to promote your coffee shop!
+Contact Page (/contact): Provides contact details for inquiries.
 
+Technologies Used
+Express.js: A fast, unopinionated, minimalist web framework for Node.js.
+
+EJS (Embedded JavaScript): A templating engine for rendering dynamic content.
+
+Bootstrap 4: A popular front-end framework for designing responsive and stylish web pages.
+
+Project Details
+app.js
+The main Express.js application file that sets up the server, static files, views, and defines routes.
+
+public/css/styles.css
+Custom styles for the Coffee House website.
+
+views/home.ejs
+The EJS template for the homepage.
+
+views/contact.ejs
+The EJS template for the contact page.
+
+Customize
+Feel free to customize the content, add additional pages, or enhance the styling based on your requirements.
