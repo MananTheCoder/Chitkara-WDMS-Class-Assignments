@@ -7,24 +7,15 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description"
     content="TextUtils is a word counter and character counter utility that helps you manipulate your text the way you want. You can remove extra spaces, copy the manipulated text as well as convert your text from uppercase to lowercase and lowercase to uppercase" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-  <link rel="icon" href="./public/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+  <link rel="icon" href="./media/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="./public/site.webmanifest">
-  <!--
-      Notice the use of ./public in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "./public/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  <link rel="manifest" href="./media/site.webmanifest">
   <title>TextUtils - Text Manipulation Utilities - Word Counter | Character Counter | Lowercase to Uppercase | Uppercase
     to Lowercase | Remove Extra Spaces</title>
   <!-- Bootstrap CDN -->
@@ -35,7 +26,7 @@
 <body data-bs-theme="dark" class="bg-dark text-light">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="localhost:5500/index.html">TextUtils - Vanilla JS Version</a>
+      <a class="navbar-brand" href="http://localhost:3000/">TextUtils - Vanilla JS Version</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,26 +34,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="http://localhost:3000/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="localhost:5500/about.html">About</a>
+            <a class="nav-link" href="http://localhost:3000/about">About</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
         <div class="form-check form-switch mx-3 mt-3 mb-2">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked
-            onChange="toggleColorTheme" />
+            onChange="toggleColorTheme()" />
           <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
         </div>
       </div>
     </div>
   </nav>
 
-  <div>
+  <div class="container my-3 pt-3">
     <h1 className="mb-4">About This Website</h1>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
@@ -89,10 +76,7 @@
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             The website was built by Madhav Goyal (<a target="_blank" rel="noreferrer"
-              href="https://www.github.com/BartBruh" className="text-decoration-none">GitHub Profile</a>) as his first
-            proper React project, by following tutorials from the YouTube Channel CodeWithHarry (<a target="_blank"
-              rel="noreferrer" href="https://www.youtube.com/CodeWithHarry" className="text-decoration-none">YouTube
-              Channel Link</a>).
+              href="https://www.github.com/m8hav" className="text-decoration-none">GitHub Profile</a>) as his WDMS Express assignment.
           </div>
         </div>
       </div>
@@ -105,7 +89,7 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            The website is made using React as the Front End Library and has no backend.
+            The website is made using Bootstrap as the Front End Framework, Node.js as the JavaScript runtime environment, and Express.js as the Back End Framework.
           </div>
         </div>
       </div>
