@@ -26,5 +26,11 @@ The server will start on http://localhost:3000. Navigate to this URL in your bro
 
 ## Project Structure
 index.html: The HTML file served when accessing the root URL.
+
 public/images/: Directory containing static images to be served.
+
 app.js: Main server file that contains the Express.js setup.
+
+## Preview
+![image](https://github.com/gurjotsaini53/Chitkara-WDMS-Class-Assignments/assets/88865725/3d9883c5-7ea0-457c-aac4-7e52d4b11ae4)
+
