@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Project</title>
+</head>
+
+<style>
+body {
+  padding-top: 56px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+#carouselExample {
+  margin-top: 20px;
+}
+
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Chitkara</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+
+    <!-- Card -->
+    <div class="card">
+      <img src="https://imgs.search.brave.com/A_1TR0aooNno9W6uhdLKWhWqFk9AgTHN_oqyC2T7Ai0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jNC53/YWxscGFwZXJmbGFy/ZS5jb20vd2FsbHBh/cGVyLzY4OS84MDYv/NDYwL21pc3QtY2xv/dWRzLXRyZWVzLWRh/cmstd2FsbHBhcGVy/LXByZXZpZXcuanBn" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ipsa cum quasi doloremque dolorem, ipsam possimus enim nemo, reprehenderit perspiciatis natus nihil delectus praesentium dicta. Iure esse cumque quod excepturi.</p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://imgs.search.brave.com/gnj_jLXJ-5QMigO4uzOslwOsvv_EWzMLMV3k97Rv-SM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9saDUu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL3Av/QUYxUWlwT2RwekFw/RC1PYjdobUF4REZn/RXluN3dGVnNnRFd2/bGxpX0VCdz13MTA4/MC1rLW5v" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://imgs.search.brave.com/9KU1L6U9euZRV5Uli8jyCHTbJ53HDB_dXiJ49I41Taw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZhL0NoaXRrYXJh/X1VuaXZlcnNpdHks/X1B1bmphYl9tYWlu/X2ludGVybmFsX3Jv/YWQuanBn" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
